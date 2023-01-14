@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="CN">
+
+<head>
+    <title>My Page!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- nav也是语义化标签，和div一样 -->
+        <nav>
+            <!-- ul>li*3 -->
+            <ul>
+                <li><a href="index2.html">主页</a></li>
+                <li><a href="menu.html">经营产品</a></li>
+                <li class="mobile"><a href="locations.html">联系地址</a> </li>
+                <li class="mobile"><a href="contact.html">联系方式</a> </li>
+                <li class="logo"><a href="inde2x.html">桃李面包LOGO</a></li>
+                <li class="desktop"><a href="locations.html">联系地址</a> </li>
+                <li class="desktop"><a href="contact.html">联系方式</a> </li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <section class="features">
+        <figure>
+            <!-- 以下两个标签需要查一下相关文章 -->
+            <!-- srcset 用于需要不同尺寸但是同一张图的场景 -->
+            <!-- picture 用于在不同设备上加载不同形状图片 -->
+            <img src="images/面包.jpg" alt="新鲜面包">
+            <figcaption>新鲜面包</figcaption>
+        </figure>
+        <figure>
+            <img src="images/粽子.jpg" alt="新鲜粽子">
+            <figcaption>飘香粽子</figcaption>
+        </figure>
+        <figure>
+            <img src="images/月饼.jpg" alt="团圆月饼">
+            <figcaption>团圆月饼</figcaption>
+        </figure>
+    </section>
+
+    <footer>桃李面包股份有限公司
+        地址：沈阳市苏家屯区丁香街176号
+        电话：400-168-6166</footer>
+</body>
+
+</html>

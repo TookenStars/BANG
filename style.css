@@ -1,0 +1,136 @@
+/* selector {
+  property: value;
+  property2: value;
+  color: red;
+} */
+
+body {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-family: Helvetica Neue, Helvetica, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+header {
+  background-color: black;
+  background-image: url(images/工厂.jpg);
+  background-size: 100%;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+header .mobile {
+  display: none;
+}
+header .logo a {
+  background-image: url("images/logo.png");
+  display: inline-block;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  top: -16px;
+  text-indent: -99999px;
+  /* 首行文本缩进，虽然看不到了，但是任然符合语义化标签，可以读到，只是看不到 */
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  /* margin: 0 20px 0 0; 从上右下左，顺时针*/
+  margin-right: 20px;
+  /* margin-top: 20px; */
+}
+/* RESPONSIVE RULE */
+@media screen and (max-width: 481px) {
+  header {
+    height: 200px;
+    /* background-position: 0 -30px; */
+  }
+  header .mobile {
+    display: inline-block;
+  }
+  header .desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  header {
+    height: 200px;
+    background-image: url(./images/麻花面包.jpg);
+    background-position: 0 -30px;
+  }
+}
+/* FEATURES */
+.features {
+  background-color: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+}
+
+.features figure {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.features figure img {
+  border: 1px solid green;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: gray 0 0 10px;
+}
+/* RESPONSIVE RULE
+@media screen and (max-width: 521px) {
+  .features {
+    display: block;
+  }
+} */
+/* FOOTER */
+footer {
+  background-color: black;
+  color: gray;
+  font-size: 12px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* @media screen and (max-width: 800px) {
+  .features {
+    background: pink;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features {
+    background: red;
+  }
+} */
+/* @media screen and (min-width: 600px) {
+  .features {
+    background: red;
+  }
+}
+@media screen and (min-width: 800px) {
+  .features {
+    background: pink;
+  }
+} */
